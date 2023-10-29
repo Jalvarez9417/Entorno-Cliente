@@ -1,0 +1,26 @@
+.carrera {
+  position: relative;
+  background-color: rgb(206, 200, 200);
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#img1,
+#img2 {
+  width: 100px;
+  height: auto;
+}
+
+#img2 {
+  margin-top: 10px;
+}
+button {
+  margin-right: 10px;
+}
+.mi-boton {
+  background-color: rgb(21, 255, 0);
+}

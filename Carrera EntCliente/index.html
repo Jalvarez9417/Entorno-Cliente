@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrera de animales</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="carrera">
+      <img id="img1" src="img/cocheCarrera.png" alt="Coche 1" />
+      <br />
+      <img id="img2" src="img/cocheCarrera.png" alt="Coche 2" />
+    </div>
+    <div class="buttons">
+      <input
+        type="button"
+        name="comenzar"
+        value="COMENZAR"
+        id="comenzar"
+        onclick="
+            comenzar()"
+      />
+      <input
+        type="button"
+        class="mi-boton"
+        name="carreraGanador"
+        value="Carrera con Ganador"
+        id="ganador"
+        onclick="
+          carreraGanador()"
+      /><input
+        type="button"
+        name="detenerCarrera"
+        value="DETENER"
+        id="detener"
+        onclick="
+        detenerCarrera()"
+      />
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
