@@ -20,7 +20,9 @@ const moverImagenes = () => {
   img2.style.marginLeft = position2 + "px";
 
   // Verificar si alguno ha llegado al final de la ventana
-  if (position1 >= window.innerWidth) {
+  //if (position1 >= window.innerWidth ) {
+  if (position1 >= window.innerWidth - 150) {
+    //Belén. Resto 150 aprox por el tamaño del coche.
     position1 = 0;
   }
 
@@ -63,3 +65,9 @@ var detenerCarrera = () => {
 
   clearInterval(intervalId);
 };
+
+/*
+Muy bien Julio,
+te he restado 150 px( aproximadamente lo que puede ocupar la iamgen) a window.innerWidth. Porque si no, se pasaba del 100% de la pantalla y salia la barra de 
+desplazamiento horizontal.
+*/
